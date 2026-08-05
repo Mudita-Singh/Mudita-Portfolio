@@ -58,7 +58,7 @@ Computer Science undergraduate specializing in Cyber Security and Forensics with
 
 ## 💼 Internship Experience
 
-- **Software Development Intern** @ *Sunsys Techsol* (Jun 2026 — Jul 2026)
+- **Frontend Developer Intern** @ *Sunsys Techsol* (Jun 2026 — Jul 2026)
   - Developed and enhanced the **ChaloSaathi** ride-sharing platform using **HTML, CSS, JavaScript, and Django**, delivering responsive interfaces and improving core user workflows.
   - Implemented features including multi-step user onboarding, optional vehicle registration, ride search autocomplete, and route visualization with interactive maps.
   - Contributed to backend functionality by improving authentication flows, ride search filtering, booking workflows, form validation, and notification handling.
