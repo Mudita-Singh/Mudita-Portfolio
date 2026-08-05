@@ -58,11 +58,11 @@ Computer Science undergraduate specializing in Cyber Security and Forensics with
 
 ## 💼 Internship Experience
 
-- **Frontend Developer Intern** @ *KaushalSaathi* (Jun 2026 — Jul 2026)
-  - Developed and maintained the frontend of the ChaloSaathi web application using HTML and CSS.
-  - Built responsive and user-friendly interfaces while collaborating with the backend team working on the Django framework.
-  - Implemented UI enhancements, fixed frontend issues, and improved the overall user experience across multiple pages.
-  - Worked collaboratively using Git and GitHub for version control and project management.
+- **Software Development Intern** @ *Sunsys Techsol* (Jun 2026 — Jul 2026)
+  - Developed and enhanced the **ChaloSaathi** ride-sharing platform using **HTML, CSS, JavaScript, and Django**, delivering responsive interfaces and improving core user workflows.
+  - Implemented features including multi-step user onboarding, optional vehicle registration, ride search autocomplete, and route visualization with interactive maps.
+  - Contributed to backend functionality by improving authentication flows, ride search filtering, booking workflows, form validation, and notification handling.
+  - Redesigned profile and ride publishing interfaces, fixed UI/UX issues, and collaborated with the development team using Git and GitHub.
 
 ---
 
