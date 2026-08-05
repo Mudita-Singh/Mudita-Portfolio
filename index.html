@@ -823,6 +823,54 @@
       line-height: 1.6;
     }
 
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .cert-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .cert-card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-3px);
+    }
+
+    .cert-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(94, 234, 212, 0.1);
+      border: 1px solid var(--cyan-dim);
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cert-title {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .cert-issuer {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
     .edu-card {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -952,6 +1000,7 @@
         <a href="#projects">projects</a>
         <a href="#skills">skills</a>
         <a href="#achievements">achievements</a>
+        <a href="#certifications">certifications</a>
         <a href="#contact">contact</a>
       </div>
     </nav>
@@ -1115,7 +1164,7 @@
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
       <div class="eyebrow reveal">stdout.log</div>
-      <h2 class="h reveal">Achievements &amp; Certifications</h2>
+      <h2 class="h reveal">Achievements</h2>
       <div class="stat-grid reveal">
         <div class="stat-card">
           <div class="stat-num" data-count="250" data-suffix="+">250+</div>
@@ -1129,9 +1178,24 @@
           <div class="stat-num" data-static="8.5">8.5</div>
           <div class="stat-label">Current CGPA out of 10.0 at UPES Dehradun</div>
         </div>
-        <div class="stat-card">
-          <div class="stat-num" data-static="GitHub">GitHub</div>
-          <div class="stat-label">GitHub Foundations Certification (DataCamp)</div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="eyebrow reveal">certifications.json</div>
+      <h2 class="h reveal">Certifications</h2>
+      <div class="cert-grid reveal">
+        <div class="cert-card">
+          <div class="cert-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15l-2 5l-2-1l-2 1l1-5.6L3 10.5l5.7-.5L12 5l3.3 5l5.7.5l-4 3.9l1 5.6l-2-1l-2 1z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-title">GitHub Foundations Certification</div>
+            <div class="cert-issuer">Issued by DataCamp</div>
+          </div>
         </div>
       </div>
     </section>

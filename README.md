@@ -18,7 +18,12 @@ Computer Science undergraduate specializing in Cyber Security and Forensics with
 - 📊 **CGPA**: 8.5 / 10.00
 - 💻 **LeetCode**: 250+ DSA problems solved in Java ([LeetCode Profile](https://leetcode.com/u/Mudita-singh/))
 - 🤝 **Open Source**: 15+ Merged Pull Requests — GirlScript Summer of Code (GSSoC'26)
-- 📜 **Certification**: GitHub Foundations Certification (DataCamp)
+
+---
+
+## 📜 Certifications
+
+- **GitHub Foundations Certification** — Issued by DataCamp
 
 ---
 
