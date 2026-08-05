@@ -768,6 +768,31 @@
       border-radius: 20px;
     }
 
+    .proj-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .proj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--cyan);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .proj-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
     .stat-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -980,6 +1005,12 @@
           </div>
         </div>
         <div class="skill-card">
+          <div class="skill-cat">Databases</div>
+          <div class="chip-row">
+            <span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
           <div class="skill-cat">Security Tools</div>
           <div class="chip-row">
             <span class="chip">Nmap</span><span class="chip">sqlmap</span>
@@ -988,23 +1019,10 @@
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-cat">Databases &amp; OS</div>
-          <div class="chip-row">
-            <span class="chip">MySQL</span><span class="chip">Kali Linux</span><span class="chip">Windows</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-cat">Core Concepts</div>
-          <div class="chip-row">
-            <span class="chip">OOP</span><span class="chip">DBMS</span><span class="chip">OS</span>
-            <span class="chip">CN</span><span class="chip">DSA</span>
-          </div>
-        </div>
-        <div class="skill-card">
           <div class="skill-cat">Developer Tools</div>
           <div class="chip-row">
             <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Docker</span>
-            <span class="chip">CI/CD</span><span class="chip">IntelliJ</span><span class="chip">VS Code</span>
+            <span class="chip">IntelliJ</span><span class="chip">VS Code</span>
           </div>
         </div>
       </div>
@@ -1023,33 +1041,14 @@
           <div class="commit-head">
             <span class="commit-role">Frontend Developer Intern</span>
             <span class="commit-org">KaushalSaathi</span>
-            <span class="commit-tag">ongoing</span>
-            <span class="commit-date">Jun — Jul 2026</span>
+            <span class="commit-date">Jun 2026 — Jul 2026</span>
           </div>
           <div class="commit-body">
             <ul>
-              <li>Developed and maintained the frontend of the ChaloSaathi web application using HTML and CSS</li>
-              <li>Built responsive, user-friendly interfaces while collaborating with the backend team working on Django
-              </li>
-              <li>Implemented UI enhancements, fixed frontend issues, and improved overall user experience across
-                multiple pages</li>
-              <li>Worked collaboratively using Git and GitHub for version control and project management</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="commit reveal">
-          <div class="commit-node"></div>
-          <div class="commit-hash">commit 3d81eb4</div>
-          <div class="commit-head">
-            <span class="commit-role">Intern</span>
-            <span class="commit-org">Dragon Flora</span>
-            <span class="commit-date">Jun — Jul 2025</span>
-          </div>
-          <div class="commit-body">
-            <ul>
-              <li>Created educational and awareness-based digital content aligned with sustainability initiatives</li>
-              <li>Collaborated with team members to plan content schedules and campaign messaging</li>
+              <li>Developed and maintained the frontend of the ChaloSaathi web application using HTML and CSS.</li>
+              <li>Built responsive and user-friendly interfaces while collaborating with the backend team working on the Django framework.</li>
+              <li>Implemented UI enhancements, fixed frontend issues, and improved the overall user experience across multiple pages.</li>
+              <li>Worked collaboratively using Git and GitHub for version control and project management.</li>
             </ul>
           </div>
         </div>
@@ -1063,44 +1062,51 @@
       <h2 class="h reveal">Projects</h2>
       <div class="proj-grid reveal">
         <div class="proj-card">
-          <div class="proj-tag">AI · Open Source</div>
+          <div class="proj-tag">React · Node.js · MongoDB · Pinecone · Gemini AI · GitHub OAuth</div>
           <div class="proj-title">FirstCommit</div>
           <div class="proj-desc">
-            Built an AI-powered platform to help first-time contributors understand GitHub repositories and onboard to
-            open source.
+            Built an AI-powered platform that simplifies first-time open-source contributions through repository analysis, RAG-based semantic code search, and AI-powered repository Q&amp;A using Pinecone and Gemini AI.
             <ul>
-              <li>Implemented a RAG pipeline using Pinecone for semantic code search and repo-level Q&amp;A</li>
-              <li>Integrated GitHub OAuth with secure httpOnly JWT auth and MongoDB caching</li>
-              <li>Built an AI-powered Issue Explorer surfacing beginner-friendly issues with file-level guidance</li>
+              <li>Developed an AI Issue Explorer with GitHub OAuth, JWT authentication, and MongoDB caching, reducing AI API calls by 80%.</li>
+              <li>Deployed on Vercel and Render for production availability.</li>
             </ul>
           </div>
-          <div class="proj-metric">● 80% reduction in AI API calls</div>
+          <div class="proj-footer">
+            <span class="proj-metric">● 80% AI API Call Reduction</span>
+            <a class="proj-link" href="https://github.com/Mudita-Singh/FirstCommit" target="_blank" rel="noopener">github.com/Mudita-Singh/FirstCommit ↗</a>
+          </div>
         </div>
+
         <div class="proj-card">
-          <div class="proj-tag">Cybersecurity · Full-Stack</div>
-          <div class="proj-title">SIEM Assistant</div>
+          <div class="proj-tag">Node.js · Docker · Distributed Systems</div>
+          <div class="proj-title">DistriCache</div>
           <div class="proj-desc">
-            Conversational, AI-powered SIEM dashboard for natural-language threat investigation and security log
-            analysis.
+            Engineered a fault-tolerant distributed in-memory cache using SHA-1 consistent hashing (100 virtual nodes), O(1) LRU eviction, dual TTL expiration, and synchronous primary-replica replication.
             <ul>
-              <li>Built with React (Vite), Flask, Wazuh SIEM, and Elasticsearch</li>
-              <li>Query translation from natural language to Elasticsearch DSL and KQL</li>
-              <li>Automated, context-aware, multi-step threat report generation</li>
+              <li>Implemented heartbeat-based failure detection, automatic client-side failover, and JWT-secured APIs with rate limiting.</li>
+              <li>Validated resilience through Docker Compose chaos testing and deployed on Render.</li>
             </ul>
           </div>
-          <div class="proj-metric">● Multi-step security investigation</div>
+          <div class="proj-footer">
+            <span class="proj-metric">● SHA-1 Hashing · 100 Virtual Nodes</span>
+            <a class="proj-link" href="https://github.com/Mudita-Singh/DistriCache" target="_blank" rel="noopener">github.com/Mudita-Singh/DistriCache ↗</a>
+          </div>
         </div>
+
         <div class="proj-card">
-          <div class="proj-tag">Cloud · DevTools</div>
+          <div class="proj-tag">React 19 · Node.js · Express · Supabase PostgreSQL · Gemini AI · AWS Cognito</div>
           <div class="proj-title">Visual Code Debugger</div>
           <div class="proj-desc">
-            Cloud-based debugging platform with real-time code execution and visualization.
+            Developed an AI-powered code visualization platform that generates interactive flowcharts, function call stacks, and step-by-step code explanations using Gemini AI.
             <ul>
-              <li>Integrated six AWS services for a scalable, secure architecture</li>
-              <li>Implemented authentication, monitoring, and performance optimization</li>
+              <li>Built a full-stack application with React 19, Monaco Editor, React Flow, Node.js/Express, and Supabase PostgreSQL.</li>
+              <li>Features AWS Cognito authentication and deployment on Vercel and Render.</li>
             </ul>
           </div>
-          <div class="proj-metric">● 6 AWS services integrated</div>
+          <div class="proj-footer">
+            <span class="proj-metric">● Flowcharts &amp; Call Stacks</span>
+            <a class="proj-link" href="https://github.com/Mudita-Singh/Visual-Code-Debugger" target="_blank" rel="noopener">github.com/Mudita-Singh/Visual-Code-Debugger ↗</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1108,11 +1114,11 @@
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
       <div class="eyebrow reveal">stdout.log</div>
-      <h2 class="h reveal">Achievements</h2>
+      <h2 class="h reveal">Achievements &amp; Certifications</h2>
       <div class="stat-grid reveal">
         <div class="stat-card">
           <div class="stat-num" data-count="250" data-suffix="+">250+</div>
-          <div class="stat-label">DSA problems solved on LeetCode using Java</div>
+          <div class="stat-label">Data Structures &amp; Algorithms problems solved on LeetCode using Java</div>
         </div>
         <div class="stat-card">
           <div class="stat-num" data-count="15" data-suffix="+">15+</div>
@@ -1135,8 +1141,8 @@
       <h2 class="h reveal">Education</h2>
       <div class="edu-card reveal">
         <div>
-          <div class="edu-name">UPES Dehradun, India</div>
-          <div class="edu-degree">B.Tech in Computer Science Engineering (Cyber Security &amp; Forensics)</div>
+          <div class="edu-name">UPES, Dehradun</div>
+          <div class="edu-degree">B.Tech, Computer Science Engineering (Cyber Security &amp; Forensics)</div>
           <div class="edu-meta">Aug 2023 — Aug 2027</div>
         </div>
         <div class="cgpa-badge">
@@ -1149,8 +1155,7 @@
     <!-- CONTACT -->
     <footer id="contact">
       <div class="foot-title">Let's build something.</div>
-      <div class="foot-sub">Open to Software Engineering internship opportunities — full-stack development, security
-        tooling, and everything in between.</div>
+      <div class="foot-sub">Computer Science undergraduate specializing in Cyber Security and Forensics with experience in full-stack development, Java, and modern web technologies. Seeking Software Engineering internship opportunities.</div>
       <div class="contact-row">
         <a class="contact-chip" href="mailto:smudita900@gmail.com">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1164,9 +1169,9 @@
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
-          +91 9670535907
+          +91 96705 35907
         </a>
-        <a class="contact-chip" href="https://linkedin.com/in/mudita-singh-21008430b">
+        <a class="contact-chip" href="https://linkedin.com/in/mudita-singh-21008430b" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
             <rect x="2" y="9" width="4" height="12" />
@@ -1174,21 +1179,21 @@
           </svg>
           LinkedIn
         </a>
-        <a class="contact-chip" href="https://github.com/Mudita-Singh">
+        <a class="contact-chip" href="https://github.com/Mudita-Singh" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path
               d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
           </svg>
           github.com/Mudita-Singh
         </a>
-        <a class="contact-chip" href="https://leetcode.com/u/Mudita-singh/">
+        <a class="contact-chip" href="https://leetcode.com/u/Mudita-singh/" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
           </svg>
           LeetCode
         </a>
       </div>
-      <div class="foot-bottom">// built from resume.pdf · last compiled July 2026</div>
+      <div class="foot-bottom">// built from resume.pdf</div>
     </footer>
 
   </div>
@@ -1215,8 +1220,8 @@
       outEl.innerHTML = `
       <div class="out-muted" style="margin-top:10px;">// loading profile…</div>
       <div class="out-title">Mudita <span class="accent">.</span> Software Engineer</div>
-      <div class="out-role">Cyber Security &amp; Forensics · UPES Dehradun · ex-KaushalSaathi</div>
-      <div class="out-muted" style="max-width:520px;">CS undergrad building full-stack apps and security tooling — from AI-powered GitHub onboarding to conversational SIEM dashboards.</div>
+      <div class="out-role">Cyber Security &amp; Forensics · UPES Dehradun · Frontend Developer Intern @ KaushalSaathi</div>
+      <div class="out-muted" style="max-width:540px;">Computer Science undergraduate specializing in Cyber Security and Forensics with experience in full-stack development, Java, and modern web technologies. Seeking Software Engineering internship opportunities.</div>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#experience">View experience →</a>
         <a class="btn btn-ghost" href="mailto:smudita900@gmail.com">Say hello</a>
